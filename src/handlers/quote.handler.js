@@ -14,4 +14,13 @@ const createQuoteHandler = async (req, res) => {
   }
 };
 
-module.exports = { createQuoteHandler };
+const getAllQuotesHandler = async (req, res) => {
+  try {
+    const quotes = await service.getAllQuotes();
+    res.status(200).send(quotes);
+  } catch (error) {
+    res.status(500).send();
+  }
+};
+
+module.exports = { createQuoteHandler, getAllQuotesHandler };

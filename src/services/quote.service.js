@@ -25,4 +25,14 @@ const createQuote = async (qid) => {
   }
 };
 
-module.exports = { createQuote };
+const getAllQuotes = async () => {
+  // eslint-disable-next-line no-useless-catch
+  try {
+    const data = await Quote.findAll();
+    return data;
+  } catch (error) {
+    throw error;
+  }
+};
+
+module.exports = { createQuote, getAllQuotes };
