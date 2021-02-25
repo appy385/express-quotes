@@ -1,12 +1,6 @@
-const fetch = require('node-fetch');
 const { Quote } = require('../models');
 const ExistsError = require('../errors/exists.error');
-
-function fetchData(id) {
-  return fetch(`https://api.quotable.io/quotes/${id}`)
-    .then((response) => response.json())
-    .then((data) => (data));
-}
+const { fetchData } = require('../utils/fetch.utils');
 
 const createQuote = async (qid) => {
   // eslint-disable-next-line no-useless-catch
