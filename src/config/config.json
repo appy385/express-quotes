@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "Apoorva_Choudhary",
+    "password": null,
+    "database": "quotes_dev",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "Apoorva_Choudhary",
+    "password": null,
+    "database": "quotes_test",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "Apoorva_Choudhary",
+    "password": null,
+    "database": "quotes_prod",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  }
+}
